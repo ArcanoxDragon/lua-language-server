@@ -5,7 +5,7 @@ local util    = require 'utility'
 rawset(_G, 'TEST', true)
 
 function TEST(script)
-    local ast = parser:compile(script, 'lua', 'Lua 5.3')
+    local ast = parser.compile(script, 'lua', 'Lua 5.3')
     assert(ast)
     return ast
 end

@@ -1120,7 +1120,7 @@ local function trimTailComment(text)
         comment = text:sub(3)
     end
     if comment:find '^%s*[\'"[]' then
-        local result = grammar(nil, comment:gsub('^%s+', ''), 'string')
+        local result = grammar(comment:gsub('^%s+', ''), 'string')
         if result and result[1] then
             comment = result[1][1]
         end

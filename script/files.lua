@@ -446,7 +446,7 @@ function m.compileState(uri, text)
     local prog <close> = progress.create(lang.script.WINDOW_COMPILING, 0.5)
     prog:setMessage(ws.getRelativePath(uri))
     local clock = os.clock()
-    local state, err = parser:compile(text
+    local state, err = parser.compile(text
         , 'lua'
         , config.get 'Lua.runtime.version'
         , {
