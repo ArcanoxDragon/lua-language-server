@@ -275,7 +275,7 @@ local function cleanInfers(infers)
     infers['any'] = nil
 end
 
----合并对象的推断类型
+---合并对象的推断类型 | Infer type of merged object
 ---@param infers string[]
 ---@return string
 function m.viewInfers(infers)

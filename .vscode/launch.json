@@ -3,7 +3,7 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "🍺测试",
+			"name": "🍺 Test",
 			"type": "lua",
 			"request": "launch",
 			"stopOnEntry": false,
@@ -20,12 +20,14 @@
 			],
 		},
 		{
-			"name": "附加",
+			"name": "Attach",
 			"type": "lua",
 			"request": "attach",
 			"stopOnEntry": false,
 			"address": "127.0.0.1:11427",
 			"outputCapture": [
+				"print",
+				"stderr"
 			],
 			"sourceMaps": [
 				[

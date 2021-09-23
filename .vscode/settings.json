@@ -30,5 +30,6 @@
     "Lua.misc.parameters": [
         "--develop=true",
         "--dbgport=11413",
-    ]
+    ],
+    "jupyter.jupyterServerType": "local"
 }
